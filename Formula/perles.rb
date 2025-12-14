@@ -5,21 +5,21 @@
 class Perles < Formula
   desc "Terminal-based kanban board for beads issue tracking"
   homepage "https://github.com/zjrosen/perles"
-  version "0.2.02"
+  version "0.2.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.02/perles_0.2.02_darwin_amd64.tar.gz"
-      sha256 "1650fbb28902473343abbeca9babf819cbdb2552bc663a1d4a46fcb54652356c"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.10/perles_0.2.10_darwin_amd64.tar.gz"
+      sha256 "c01963e5df5443638784dfc41f14625f792acae3dcd66a368e0152cc04e1174e"
 
       def install
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.02/perles_0.2.02_darwin_arm64.tar.gz"
-      sha256 "e326cf54bc877a820873dd20f9262ae7d1401826337c81a29663f38d81caeebe"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.10/perles_0.2.10_darwin_arm64.tar.gz"
+      sha256 "cf4f06537049e23e564e8d3b161587101c8f66683931f025e92591196a871e6d"
 
       def install
         bin.install "perles"
@@ -29,15 +29,15 @@ class Perles < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.02/perles_0.2.02_linux_amd64.tar.gz"
-      sha256 "2b0b9520f1f5c8f712d0c23a10b1ade82e525155b867abc2d13ed08c509f0dbb"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.10/perles_0.2.10_linux_amd64.tar.gz"
+      sha256 "9bc495b1238cdcb1572308b0d5f76d39ef9fefcfab59e3021019d2266ecc5d87"
       def install
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.02/perles_0.2.02_linux_arm64.tar.gz"
-      sha256 "2499374d4d1ec3f4f452335b1c8b076a8aadc52e655ec1b1c5ea7bb274325de5"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.10/perles_0.2.10_linux_arm64.tar.gz"
+      sha256 "281f9266631540dce5261abdafb46084dbd39d2e9fd4b1f0757fa95a6de668fc"
       def install
         bin.install "perles"
       end

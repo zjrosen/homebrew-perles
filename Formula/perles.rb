@@ -5,21 +5,21 @@
 class Perles < Formula
   desc "Terminal-based kanban board for beads issue tracking"
   homepage "https://github.com/zjrosen/perles"
-  version "0.2.13"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.13/perles_0.2.13_darwin_amd64.tar.gz"
-      sha256 "2c11289e1f09bb80c4e1d72dc16a7c04b7d87d2ee3aef00acfb92d02d35b2bf1"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.2/perles_0.2.2_darwin_amd64.tar.gz"
+      sha256 "de49c37247ad1984228b42bedce7ace147a08df8aa83356506f0bf8ac1bab353"
 
       def install
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.13/perles_0.2.13_darwin_arm64.tar.gz"
-      sha256 "1149db59946f4ebfe8ec10cc27ac505dfe68b9c3aa048550bb86eac15c58a139"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.2/perles_0.2.2_darwin_arm64.tar.gz"
+      sha256 "be886c9b2689bfc7016e44d1d255b451cfd9df8d22a05c69268e0b584f0ade90"
 
       def install
         bin.install "perles"
@@ -29,15 +29,15 @@ class Perles < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.13/perles_0.2.13_linux_amd64.tar.gz"
-      sha256 "2be401cdffe506838ac0189fb2f70cfc840ee5378dde20176b312ec857cb62a7"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.2/perles_0.2.2_linux_amd64.tar.gz"
+      sha256 "543e4056b750774ee3a1ddc4a2de9fe3b411e26b37cac33cb2b72378bfc42035"
       def install
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.2.13/perles_0.2.13_linux_arm64.tar.gz"
-      sha256 "fbecbb0348590a2a231cf219f84e75d704262a15230091675aa5327446ea0b24"
+      url "https://github.com/zjrosen/perles/releases/download/v0.2.2/perles_0.2.2_linux_arm64.tar.gz"
+      sha256 "ce5592ec6057c18031f9e185b31238ce287c95774fb5e6d8b22e88d38588a447"
       def install
         bin.install "perles"
       end

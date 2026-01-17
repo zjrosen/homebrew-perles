@@ -11,7 +11,7 @@ class Perles < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zjrosen/perles/releases/download/v0.5.85/perles_0.5.85_darwin_amd64.tar.gz"
-      sha256 "d630306cdcee76dce96a0346a2541033019472f77c49f07ec144d2b4378704ac"
+      sha256 "6ecfaaf96ac303e8422501a048311c6307e6dcce937c1ddecbcd3d4c0ffa4eb0"
 
       def install
         bin.install "perles"
@@ -19,7 +19,7 @@ class Perles < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zjrosen/perles/releases/download/v0.5.85/perles_0.5.85_darwin_arm64.tar.gz"
-      sha256 "d7eae18756beca4805f97355af430b7888398cd58b1c7c001dcf1a76de1861f3"
+      sha256 "5aed4c18656e0de92b1aa199adf8a51dc0235a99ac19cfce18cfada595ab415c"
 
       def install
         bin.install "perles"
@@ -30,14 +30,14 @@ class Perles < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zjrosen/perles/releases/download/v0.5.85/perles_0.5.85_linux_amd64.tar.gz"
-      sha256 "2a1afaebebf78a19a518c2176aab4707f54b0313048f32a4496a5aba5f761885"
+      sha256 "ee6dc5eb19176eb23732a55c11603304fd26ea55193b304109f4502e4eb9be7c"
       def install
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zjrosen/perles/releases/download/v0.5.85/perles_0.5.85_linux_arm64.tar.gz"
-      sha256 "bb159bf71cc4a385dcfd7ce90e976a7a47601ea59e703fdfd437b5c5e223e0f8"
+      sha256 "2ff7edfedff74ac2dccf6eb89582829e228383a052681d29c8c6bb3ebdac6c22"
       def install
         bin.install "perles"
       end

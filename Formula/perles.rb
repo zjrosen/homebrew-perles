@@ -5,21 +5,21 @@
 class Perles < Formula
   desc "Terminal-based kanban board for beads issue tracking"
   homepage "https://github.com/zjrosen/perles"
-  version "0.8.93"
+  version "0.8.94"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zjrosen/perles/releases/download/v0.8.93/perles_0.8.93_darwin_amd64.tar.gz"
-      sha256 "d8080a15ce34a2728613645bd456077b5c49f27c9626aad6608a3419673546c4"
+      url "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_darwin_amd64.tar.gz"
+      sha256 "0b5e9abfa21de7f56aac49429a05a35f84fc7f0d9520fe40a59e7092c4b5bd4b"
 
       define_method(:install) do
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zjrosen/perles/releases/download/v0.8.93/perles_0.8.93_darwin_arm64.tar.gz"
-      sha256 "1e0f62306f7e3437ed0f7f0d8c484a288fce8d8bceb11d7a386c14cefbc334c3"
+      url "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_darwin_arm64.tar.gz"
+      sha256 "4fd4676b9902e7a27bbce0cec9c6d720e959df8437bb531f439e5207a7ec841c"
 
       define_method(:install) do
         bin.install "perles"
@@ -29,15 +29,15 @@ class Perles < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.8.93/perles_0.8.93_linux_amd64.tar.gz"
-      sha256 "f43bcdc02174d9cab0f89abc2f074cce41385c4a4af934e81d30e703129a46c1"
+      url "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_linux_amd64.tar.gz"
+      sha256 "4016972ccce4c7915ebf7fa3a99165a032fa42d005a4f43bbbe548ec347e1a17"
       define_method(:install) do
         bin.install "perles"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zjrosen/perles/releases/download/v0.8.93/perles_0.8.93_linux_arm64.tar.gz"
-      sha256 "389cf88517ad58178261ba8f096702a78e42072269ae3fe0958ad237e448112e"
+      url "https://github.com/zjrosen/perles/releases/download/v0.8.94/perles_0.8.94_linux_arm64.tar.gz"
+      sha256 "df1b079ff458b2c88e693feda286e5024bbd3f643308013b844125c3c4845e40"
       define_method(:install) do
         bin.install "perles"
       end
